@@ -1,0 +1,20 @@
+.container {
+
+    .big-button {
+        .btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .small-buttons {
+        padding-top: 2em;
+    }
+}

@@ -1,0 +1,24 @@
+<section class="container">
+    <div class="small-buttons">
+        <button class="btn btn__lock btn__small" (click)="togglePadlock('padlock1')">
+            <mat-icon class="icon" [ngClass]="{ 'icon__lock': !door.padlock1, 'icon__unlock': door.padlock1}">{{!door.padlock1 ? 'lock_outline' : 'lock_open_outline'}}</mat-icon>
+            <p class="btn-text">{{!door.padlock1 ? 'locked' : 'opened'}}</p>
+        </button>
+        <button class="btn btn__lock btn__small" (click)="togglePadlock('padlock2')">
+            <mat-icon class="icon" [ngClass]="{ 'icon__lock': !door.padlock2, 'icon__unlock': door.padlock2}">{{!door.padlock2 ? 'lock_outline' : 'lock_open_outline'}}</mat-icon>
+            <p class="btn-text">{{!door.padlock2 ? 'locked' : 'opened'}}</p>
+        </button>
+        <button class="btn btn__lock btn__big" (click)="togglePadlock('padlockBigger')" [disabled]="!door.enableBigPadlock">
+            <mat-icon class="icon" [ngClass]="{ 'icon__lock': !door.padlockBigger, 'icon__unlock': door.padlockBigger}">{{!door.padlockBigger ? 'lock_outline' : 'lock_open_outline'}}</mat-icon>
+            <p class="btn-text">{{!door.padlockBigger ? 'locked' : 'opened'}}</p>
+        </button>
+        <button class="btn btn__lock btn__small" (click)="togglePadlock('padlock3')">
+            <mat-icon class="icon" [ngClass]="{ 'icon__lock': !door.padlock3, 'icon__unlock': door.padlock3}">{{!door.padlock3 ? 'lock_outline' : 'lock_open_outline'}}</mat-icon>
+            <p class="btn-text">{{!door.padlock3 ? 'locked' : 'opened'}}</p>
+        </button>
+        <button class="btn btn__lock btn__small" (click)="togglePadlock('padlock4')">
+            <mat-icon class="icon" [ngClass]="{ 'icon__lock': !door.padlock4, 'icon__unlock': door.padlock4}">{{!door.padlock4 ? 'lock_outline' : 'lock_open_outline'}}</mat-icon>
+            <p class="btn-text">{{!door.padlock4 ? 'locked' : 'opened'}}</p>
+        </button>
+    </div>
+</section>

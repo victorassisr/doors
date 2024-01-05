@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #000;
+    margin: 0 0.5em;
+    width: fit-content;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .icon {
+        &__lock {
+            color: #ccc;
+        }
+        &__unlock {
+            color: #0f0;
+        }
+    }
+
+    &__big {
+        padding: 2em 3em;
+    }
+
+    &__small {
+        padding: 1em 2em;
+    }
+
+    .btn-text {
+        color: #fff;
+        padding-top: 0.5em;
+        margin: 0;
+    }
+}
+

@@ -1,0 +1,11 @@
+<section class="dialog-container">
+    <h1 *ngIf="data.opened" mat-dialog-title>Porta aberta!</h1>
+    <h1 *ngIf="!data.opened" mat-dialog-title>Porta trancada!</h1>
+    <div nat-dialog-content>
+        <p *ngIf="data.opened">Aberta em: {{data.openedAt}}</p>
+        <p *ngIf="!data.opened">Senha incorreta!</p>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="close()">Continuar...</button>
+    </div>
+</section>
